@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio of Yogeshvaran Thirugnanamurthy">
+    <title>Yogeshvaran Thirugnanamurthy | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: linear-gradient(180deg, #f0f8ff, #ffffff);
+            line-height: 1.6;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: white;
+            color: #000000;
+            font-weight: bold;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+        }
+        .navbar li {
+            margin: 0;
+        }
+        .navbar a {
+            color: #000000;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        header {
+            text-align: center;
+            padding: 4rem 2rem;
+            background-image: url('header_bgc.jpg');
+            /*background: linear-gradient(135deg, #6a11cb, #2575fc);*/
+            color: white;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        header h1 span {
+            color: #ffe600;
+        }
+        header p {
+            margin: 1rem 0;
+            font-size: 1.2rem;
+        }
+        header .btn {
+            display: inline-block;
+            background: #ffe600;
+            color: #333;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+        header .btn:hover {
+            background: #ffc107;
+        }
+
+        /* Sections */
+        section {
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .project-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        .project-card h3 {
+            margin-bottom: 0.5rem;
+            color: #6a11cb;
+        }
+        .project-card a {
+            color: #2575fc;
+            font-weight: bold;
+        }
+
+        /* Skills */    /*<a href="#">View Details</a>*/
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .skills-list li {
+            background: #6a11cb;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .Experience{
+            display:flex;
+            justify-content:last baseline;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">YT</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Hi, I'm <span>Yogeshvaran Thirugnanamurthy</span></h1>
+            <p>Azure Integration Developer | Database Enthusiast | Software Developer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am an Azure Developer with over three years of experience in designing scalable cloud solutions using Microsoft Azure services like Logic Apps, Azure Functions, and Azure Data Factory. Proficient in SQL, Cosmos DB, and C#, I specialize in creating efficient databases and serverless workflows. Currently pursuing a Master’s in Computer Science at the University of Illinois Springfield, I am dedicated to delivering innovative, business-driven solutions.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Azure Development</li>
+                <li>SQL & Database Design</li>
+                <li>Java, Python, C#</li>
+                <li>DevOps & CI/CD</li>
+            </ul>
+        </section>
+        <section id="Experience">
+            <h2>Experience</h2>
+            <div class="Experience">
+            <p>Infrastructure as Code (IaC): Designed and deployed scalable cloud solutions in Azure using Terraform, automating resource provisioning and management to ensure efficiency and consistency.
+               Serverless Workflows: Developed and integrated Azure Logic Apps and Azure Functions to streamline data flow between cloud services, enhancing system performance and reliability.
+               DevOps Integration: Collaborated with DevOps teams to implement CI/CD pipelines, reducing deployment time and manual errors through automated deployments and robust version control.
+               Performance Monitoring: Monitored and optimized cloud infrastructure using Application Insights and Log Analytics, setting up alerts and resolving post-deployment issues to maintain high availability and security.
+               Code Quality and Compliance: Conducted regular code reviews, adhering to best practices in IaC to ensure compliance with security standards and organizational guidelines.</p>
+        </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Terraform-Based Azure Automation</h3>
+                    <p>Developed Terraform modules to automate the provisioning of Azure resources, including: Storage accounts, Function apps, Networking components.
+                        Improved deployment speed and consistency by implementing automated infrastructure provisioning.
+                        </p>
+                    
+                </div>
+                <div class="project-card">
+                    <h3>T4Tigo</h3>
+                    <p> T4Tigo users can easily buy and trade indigenous products online.
+                        The marketplace includes shopping carts, shipment, and delivery services.
+                        The platform offers an offline payment method for transactions without internet.
+                        A USSD system enables seamless pricing and inventory updates.
+                        </p>
+                    
+                </div>
+                <div class="project-card">
+                    <h3>Fall detector monitoring system for elderly and disabled people</h3>
+                    <p>Older and disabled people currently face challenges in performing daily activities independently.
+                        The proposed system includes Health Monitoring systems with Body Temperature and Heartbeat measurement capabilities.
+                        The Health Monitoring System displays temperature and heartbeat data.
+                        </p>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:yogeshvaran.thiru@gmail.com">yogeshvaran.thiru@gmail.com</a></p>
+            <p>LinkedIn: <a href="www.linkedin.com/in/yogeshvaran-thirugnanamurthy-77310319b" target="_blank">linkedin.com/in/yogeshvaran</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Yogeshvaran Thirugnanamurthy. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
